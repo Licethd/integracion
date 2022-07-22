@@ -4,10 +4,10 @@ import fourteam.http.Rest;
 public class WebApi {
 
 	public static void AddControllers() {
-		Rest.addController(TripulanteController.class);
+						Rest.addController(TripulanteController.class);
 
 		Rest.start(8080);
-		Rest.createSwagger();
+				Rest.createSwagger();
 	}
 
 	public static void AddInfraestructure() {
