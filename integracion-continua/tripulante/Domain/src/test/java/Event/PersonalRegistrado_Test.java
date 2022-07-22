@@ -1,29 +1,28 @@
 package Event;
 
+import fourteam.http.Exception.HttpException;
 import java.util.UUID;
 import org.junit.Before;
 import org.junit.Test;
 
-import fourteam.http.Exception.HttpException;
-
 public class PersonalRegistrado_Test {
 
-    @Before
-    public void setup() {
+	@Before
+	public void setup() {}
 
-    }
+	@Test
+	public void HandlePersonalRegistrado_Ok() throws HttpException {
+		// creando tripulante
+		UUID keyTest = UUID.randomUUID();
+		String nombreTest = "Jose";
+		String nombreTest2 = "Juana";
 
-    @Test
-    public void HandlePersonalRegistrado_Ok() throws HttpException {
-        // creando tripulante
-        UUID keyTest = UUID.randomUUID();
-        String nombreTest = "Jose";
-        String nombreTest2 = "Juana";
+		PersonalRegistrado personalRegistradoTest = new PersonalRegistrado(
+			keyTest,
+			nombreTest
+		);
 
-        PersonalRegistrado personalRegistradoTest = new PersonalRegistrado(keyTest, nombreTest);
-
-        personalRegistradoTest.setNombre(nombreTest2);
-        String nombreReturn = personalRegistradoTest.getNombre();
-
-    }
+		personalRegistradoTest.setNombre(nombreTest2);
+		String nombreReturn = personalRegistradoTest.getNombre();
+	}
 }

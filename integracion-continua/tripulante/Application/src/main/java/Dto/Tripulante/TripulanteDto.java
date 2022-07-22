@@ -1,68 +1,69 @@
 package Dto.Tripulante;
 
+import Model.Tripulante.Cargo;
 import java.util.UUID;
 
-
-import Model.Tripulante.Cargo;
-
 public class TripulanteDto {
-    public UUID Key;
-    public String Nombre;
-    public String Apellido;
-    public String EmailAddress;
-    public Cargo Cargo;
 
-    public TripulanteDto() {
-    }
+	public UUID Key;
+	public String Nombre;
+	public String Apellido;
+	public String EmailAddress;
+	public Cargo Cargo;
 
-    public TripulanteDto(UUID key,String nombre, String apellido, String emailAddress, Cargo cargo) {
-        Key = key;
-        Nombre = nombre;
-        Apellido = apellido;
-        EmailAddress = emailAddress;
-        Cargo = cargo;
-    }
- 
+	public TripulanteDto() {}
 
-    public void setKey(UUID key) {
-        this.Key = key;
-    }
+	public TripulanteDto(
+		UUID key,
+		String nombre,
+		String apellido,
+		String emailAddress,
+		Cargo cargo
+	) {
+		Key = key;
+		Nombre = nombre;
+		Apellido = apellido;
+		EmailAddress = emailAddress;
+		Cargo = cargo;
+	}
 
-    public UUID getKey() {
-        return Key;
-    }
+	public void setKey(UUID key) {
+		this.Key = key;
+	}
 
-    public String getNombre() {
-        return Nombre;
-    }
+	public UUID getKey() {
+		return Key;
+	}
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
-    }
+	public String getNombre() {
+		return Nombre;
+	}
 
-    public String getApellido() {
-        return Apellido;
-    }
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
 
-    public void setApellido(String apellido) {
-        Apellido = apellido;
-    }
+	public String getApellido() {
+		return Apellido;
+	}
 
-    public String getEmailAddress() {
-        return EmailAddress;
-    }
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
 
-    public void setEmailAddress(String emailAddress) {
-        EmailAddress = emailAddress;
-    }
+	public String getEmailAddress() {
+		return EmailAddress;
+	}
 
-    public Cargo getCargo() {
-        return Cargo;
-    }
+	public void setEmailAddress(String emailAddress) {
+		EmailAddress = emailAddress;
+	}
 
-    public void setCargo(Cargo cargo) {
-        Cargo = cargo;
-    }
+	public Cargo getCargo() {
+		return Cargo;
+	}
 
-
+	public void setCargo(Cargo cargo) {
+		Cargo = cargo;
+	}
 }
