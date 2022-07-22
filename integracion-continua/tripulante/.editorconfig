@@ -7,7 +7,7 @@ trim_trailing_whitespace = true # default: false
 
 # para utilizar tabuladores
 indent_style = tab # regla tabs
-indent_size = 5 # default: 4
+indent_size = 4 # default: 4
 
 # para agragar una línea en blanco al final del archivo
 insert_final_newline = true # default: false
