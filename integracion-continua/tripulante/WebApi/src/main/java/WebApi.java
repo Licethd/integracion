@@ -10,7 +10,8 @@ public class WebApi {
 				Rest.createSwagger();
 	}
 
-	public static void AddInfraestructure() {
+	public static void AddInfraestructure()
+	{
 		// TODO Auto-generated method stub
 
 	}
