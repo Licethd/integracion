@@ -3,7 +3,8 @@ import fourteam.http.Rest;
 
 public class WebApi {
 
-	public static void AddControllers() {
+	public static void AddControllers()
+	{
 						Rest.addController(TripulanteController.class);
 
 		Rest.start(8080);
